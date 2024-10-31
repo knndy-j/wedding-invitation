@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Cormorant+Garamond:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Join Jamille and Kennedy on their special day. View the wedding invitation, RSVP, and more information about the venue and schedule.">
+</head>
+<body>
+    <div class="background">
+        <!-- Menu Button -->
+        <button class="menu-btn" id="menuBtn" aria-label="Menu Button">☰ Menu</button>
+
+        <!-- Side Navigation Bar -->
+        <nav class="side-nav" id="menu">
+            <ul>
+                <li><a href="#invitation">Invitation</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#countdown">Countdown</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+            </ul>
+        </nav>
+
+        <div class="background-overlay"></div>
+
+        <div class="container" id="invitation">
+            <div class="header animate">You're Invited!</div>
+            <div class="names animate">Jamille & Kennedy</div>
+            <div class="info animate">
+                We would be delighted for you to join us on our wedding day!<br>
+                <strong>Date:</strong> Thursday, May 15, 2025<br>
+                <strong>Time:</strong> 2:00 PM<br>
+                <strong>Church:</strong> <i class="fas fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/NyJeVgtvviwhxjbv9" target="_blank" rel="noopener noreferrer">St. Martin of Tours Parish Bocaue</a><br>
+                <strong>Venue:</strong> <i class="fas fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/9fU1CV2kanWFJHeVA" target="_blank" rel="noopener noreferrer">EL Tuazon Events Place & Villa, Nieves Cruz St, Bocaue, 3018 Bulacan</a>
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+        <div class="about-us" id="about-us">
+            <h2>About Us</h2>
+            <p>We are Jamille and Kennedy, two souls meant to be together. We met in college, and from that moment we knew our lives would never be the same. Our journey has been filled with love, laughter, and unforgettable moments. We can't wait to start our forever, surrounded by the people we care about most!</p>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq" id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What should I wear?</h3>
+                <p>The dress code is semi-formal. We want everyone to be comfortable, but please avoid jeans or casual attire.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I bring a guest?</h3>
+                <p>Yes, each invitation includes a plus one. Please ensure you RSVP for your guest as well.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Where can I park?</h3>
+                <p>Parking is available at the venue. There will be signs to guide you.</p>
+            </div>
+        </div>
+
+        <!-- Countdown Timer -->
+        <div class="countdown" id="countdown">
+            <p>Countdown to our special day:</p>
+            <div id="timer"></div>
+        </div>
+
+        <!-- Photo Gallery -->
+        <div class="photo-gallery" id="gallery">
+            <h3>Memories of Us</h3>
+            <div class="gallery">
+                <img src="photo1.jpg" alt="Jamille and Kennedy Photo 1">
+                <img src="photo2.jpg" alt="Jamille and Kennedy Photo 2">
+                <img src="photo3.jpg" alt="Jamille and Kennedy Photo 3">
+            </div>
+        </div>
+
+        <!-- RSVP Button -->
+        <button class="rsvp-btn" id="rsvpBtn">RSVP</button>
+
+        <!-- Footer -->
+        <div class="footer">Save the Date! We can't wait to celebrate with you.</div>
+    </div>
+
+    <!-- RSVP Modal -->
+    <div class="modal" id="rsvpModal">
+        <div class="modal-content">
+            <span class="close" id="closeRsvp" aria-label="Close">&times;</span>
+            <h2>RSVP</h2>
+            <p>Please let us know if you’ll be attending!</p>
+            <p><strong>Strictly one additional guest allowed.</strong></p>
+            <form id="rsvpForm">
+                <input type="text" id="name" placeholder="Your Name" required aria-label="Your Name">
+                <input type="email" id="email" placeholder="Your Email" required aria-label="Your Email">
+                <button type="submit">Send RSVP</button>
+                <div id="rsvpMessage"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
